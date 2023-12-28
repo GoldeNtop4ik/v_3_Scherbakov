@@ -1,9 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Notice">
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="197dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="687dp"
+        android:layout_toEndOf="@+id/imageButton"
+        android:text="Уведомления"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/exit"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="356dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/titleTextView"
+        android:layout_marginStart="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-600dp"
+        app:srcCompat="@drawable/support__2_" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="356dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/support__3_" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="356dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/support__4_" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="-45dp"
+        android:text="Показывать Пуш-уведомления "
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="-45dp"
+        android:text="Запомнить данные для входа "
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="-150dp"
+        android:text="Показывать действующие полисы "
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="176dp"
+        android:textColor="@color/green"
+        android:layout_toEndOf="@+id/text3" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/text3" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox2"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/text3" />
+
+
+</RelativeLayout>
