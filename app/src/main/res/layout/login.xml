@@ -41,11 +41,11 @@
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="366dp"
-        android:layout_height="90dp"
-        android:background="@color/green"
+        android:layout_width="360dp"
+        android:layout_height="64dp"
         android:layout_below="@id/passwordEditText"
         android:layout_centerHorizontal="true"
+        android:background="@color/green"
         android:text="Войти в личный кабинет"
         android:textColor="@color/white"
         tools:ignore="MissingConstraints,TextSizeCheck"
